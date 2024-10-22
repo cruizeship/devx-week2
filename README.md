@@ -58,7 +58,9 @@ npm install express axios
 ```
 ```html
 const axios = require("axios");
+
 ...
+
 route.get('/pokemon/:name', async (req, res) => {
   const pokemonName = req.params.name.toLowerCase();
 
@@ -85,7 +87,9 @@ npm install nodemailer
 ```
 ```html
 const nodemailer = require('nodemailer');
+
 ...
+
 const transporter = nodemailer.createTransport({
   port: 465,
   host: "smtp.gmail.com",
