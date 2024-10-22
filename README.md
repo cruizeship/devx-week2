@@ -57,6 +57,8 @@ route.get('/dynamic-get', (req, res) => {
 npm install express axios
 ```
 ```html
+const axios = require("axios");
+...
 route.get('/pokemon/:name', async (req, res) => {
   const pokemonName = req.params.name.toLowerCase();
 
